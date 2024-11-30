@@ -1,205 +1,170 @@
 <!DOCTYPE html>
 <html lang="hu">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pvxhub</title>
 
-    <!-- SEO és közösségi média metaadatok -->
-    <meta
-      name="description"
-      content="PVXHub hivatalos oldala. Csatlakozz Discord szerverünkhöz, kövesd tartalmainkat és eseményeinket!"
-    />
-    <meta
-      name="keywords"
-      content="PVXHub, Discord, közösség, TikTok, Twitch, események, közösségi média"
-    />
-    <meta name="author" content="PVXHub" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pvxhub</title>
 
-    <!-- Nyílt gráf adatok (Open Graph) -->
-    <meta property="og:title" content="pvxhub - Közösségi Média és Események" />
-    <meta
-      property="og:description"
-      content="Fedezd fel a pvxhub közösségi médiás tartalmait és eseményeit! Csatlakozz a közösséghez."
-    />
-    <meta
-      property="og:image"
-      content="https://www.pvxhub.hu/animated_emblem_color_background.gif"
-    />
-    <meta property="og:url" content="https://www.pvxhub.hu" />
-    <meta property="og:type" content="website" />
+  <!-- SEO és közösségi média metaadatok -->
+  <meta name="description"
+    content="PVXHub hivatalos oldala. Csatlakozz Discord szerverünkhöz, kövesd tartalmainkat és eseményeinket!" />
+  <meta name="keywords" content="PVXHub, Discord, közösség, TikTok, Twitch, események, közösségi média" />
+  <meta name="author" content="PVXHub" />
 
-    <!-- Font Awesome és Google Fonts CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Nyílt gráf adatok (Open Graph) -->
+  <meta property="og:title" content="pvxhub - Közösségi Média és Események" />
+  <meta property="og:description"
+    content="Fedezd fel a pvxhub közösségi médiás tartalmait és eseményeit! Csatlakozz a közösséghez." />
+  <meta property="og:image" content="https://www.pvxhub.hu/animated_emblem_color_background.gif" />
+  <meta property="og:url" content="https://www.pvxhub.hu" />
+  <meta property="og:type" content="website" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="/favicon/favicon-96x96.png"
-      sizes="96x96"
-    />
-    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/favicon/apple-touch-icon.png"
-    />
-    <link rel="manifest" href="/favicon/site.webmanifest" />
-    <script src="https://static.cooltix.com/widget.js" defer></script>
-    <style>
-      /* Alapvető beállítások */
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start; /* Felülről induljon a tartalom */
-        min-height: 100vh; /* Legalább a képernyő magasságát lefedje */
-        margin: 0;
-        font-family: "Plus Jakarta Sans", sans-serif;
-        background-color: #f7eadc;
-        color: #ff9d3b;
-        overflow-y: auto; /* Görgetés engedélyezése, ha szükséges */
-      }
+  <!-- Font Awesome és Google Fonts CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://api.fonts.coollabs.io
+      /css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet" />
 
-      .container {
-        text-align: center;
-        max-width: 400px;
-        width: 100%;
-        padding: 20px;
-        border-radius: 10px;
-      }
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
+  <script src="https://static.cooltix.com/widget.js" defer></script>
+  <style>
+    /* Alapvető beállítások */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      /* Felülről induljon a tartalom */
+      min-height: 100vh;
+      /* Legalább a képernyő magasságát lefedje */
+      margin: 0;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      background-color: #f7eadc;
+      color: #ff9d3b;
+      overflow-y: auto;
+      /* Görgetés engedélyezése, ha szükséges */
+    }
 
-      /* Profil kép */
-      .profile-img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin-bottom: 15px;
-      }
+    .container {
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+      padding: 20px;
+      border-radius: 10px;
+    }
 
-      /* Név és cím stílusa */
-      .name {
-        font-size: 24px;
-        font-weight: bold;
-        color: #ff9d3b;
-        /* Primary szín */
-        margin: 10px 0;
-      }
+    /* Profil kép */
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
 
-      .bio {
-        font-size: 14px;
-        color: #555;
-        margin-bottom: 20px;
-      }
+    /* Név és cím stílusa */
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff9d3b;
+      /* Primary szín */
+      margin: 10px 0;
+    }
 
-      /* Link gomb stílus */
-      .link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* Középre igazítja a szöveget */
-        padding: 15px;
-        margin: 10px 0;
-        background-color: #ff9d3b;
-        /* Narancssárga gomb */
-        color: #fff;
-        /* Fehér szöveg */
-        text-decoration: none;
-        border-radius: 50px;
-        /* Teljes lekerekítés */
-        font-weight: bold;
-        font-size: 16px;
-        transition: background-color 0.3s;
-        position: relative;
-        /* Pozíció beállítása az ikon balra helyezéséhez */
-      }
+    .bio {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
 
-      .link i {
-        position: absolute;
-        left: 15px;
-        /* Balra igazítja az ikont */
-      }
+    /* Link gomb stílus */
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* Középre igazítja a szöveget */
+      padding: 15px;
+      margin: 10px 0;
+      background-color: #ff9d3b;
+      /* Narancssárga gomb */
+      color: #fff;
+      /* Fehér szöveg */
+      text-decoration: none;
+      border-radius: 50px;
+      /* Teljes lekerekítés */
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s;
+      position: relative;
+      /* Pozíció beállítása az ikon balra helyezéséhez */
+    }
 
-      .link:hover {
-        background-color: #e68729;
-        /* Sötétebb narancssárga hover */
-      }
-      button.link {
-        all: unset; /* Alapvető gombstílusok eltávolítása */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 15px;
-        margin: 10px 0;
-        background-color: #ff9d3b;
-        color: #fff;
-        border-radius: 50px;
-        font-weight: bold;
-        font-size: 16px;
-        transition: background-color 0.3s;
-        position: relative;
-        cursor: pointer;
-        width: 100%; /* Szélesség fixálása a container szélességére */
-        box-sizing: border-box; /* Padding beleszámítása a szélességbe */
-      }
+    .link i {
+      position: absolute;
+      left: 15px;
+      /* Balra igazítja az ikont */
+    }
 
-      button.link i {
-        position: absolute;
-        left: 15px;
-      }
+    .link:hover {
+      background-color: #e68729;
+      /* Sötétebb narancssárga hover */
+    }
 
-      button.link:hover {
-        background-color: #e68729;
-      }
-    </style>
-  </head>
+    button.link {
+      all: unset;
+      /* Alapvető gombstílusok eltávolítása */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      margin: 10px 0;
+      background-color: #ff9d3b;
+      color: #fff;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s;
+      position: relative;
+      cursor: pointer;
+      width: 100%;
+      /* Szélesség fixálása a container szélességére */
+      box-sizing: border-box;
+      /* Padding beleszámítása a szélességbe */
+    }
 
-  <body>
-    <div class="container">
-      <img
-        src="https://www.pvxhub.hu/animated_emblem_color_background.gif"
-        alt="Profil kép"
-        class="profile-img"
-      />
-      <div class="name">@pvxhub</div>
-      <div class="bio"></div>
+    button.link i {
+      position: absolute;
+      left: 15px;
+    }
 
-      <h2>Aktuális Eseményeink</h2>
-      <button
-        class="link"
-        data-cooltix-event-products="67292dd0c1974e2f2ac83911"
-      >
-        <i class="fa-solid fa-calendar"></i>pvxhub Fogadjunk... Buli 🕺
-      </button>
-      <h2>Elérhetőségeink</h2>
-      <a href="https://discord.gg/t6bZsWtrSz" class="link" target="_blank"
-        ><i class="fab fa-discord"></i>Discord</a
-      >
-      <a href="https://www.tiktok.com/@pvxhub" class="link" target="_blank"
-        ><i class="fab fa-tiktok"></i>TikTok</a
-      >
-      <a href="https://www.twitch.tv/pvxhub" class="link" target="_blank"
-        ><i class="fab fa-twitch"></i>Twitch</a
-      >
-      <a href="https://www.instagram.com/pvxhub/" class="link" target="_blank"
-        ><i class="fab fa-instagram"></i>Instagram</a
-      >
-      <a href="https://ko-fi.com/pilvaxhub" class="link" target="_blank"
-        ><i class="fas fa-coffee"></i>Ko-fi</a
-      >
-      <a href="https://www.youtube.com/@pilvaxhub" class="link" target="_blank"
-        ><i class="fab fa-youtube"></i>YouTube</a
-      >
-      <a href="https://www.facebook.com/pvxhub" class="link" target="_blank"
-        ><i class="fab fa-facebook"></i>Facebook</a
-      >
-    </div>
-  </body>
+    button.link:hover {
+      background-color: #e68729;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="https://www.pvxhub.hu/animated_emblem_color_background.gif" alt="Profil kép" class="profile-img" />
+    <div class="name">@pvxhub</div>
+    <div class="bio"></div>
+
+    <h2>Aktuális Eseményeink</h2>
+    <button class="link" data-cooltix-event-products="67292dd0c1974e2f2ac83911">
+      <i class="fa-solid fa-calendar"></i>pvxhub Fogadjunk... Buli 🕺
+    </button>
+    <h2>Elérhetőségeink</h2>
+    <a href="https://discord.gg/t6bZsWtrSz" class="link" target="_blank"><i class="fab fa-discord"></i>Discord</a>
+    <a href="https://www.tiktok.com/@pvxhub" class="link" target="_blank"><i class="fab fa-tiktok"></i>TikTok</a>
+    <a href="https://www.twitch.tv/pvxhub" class="link" target="_blank"><i class="fab fa-twitch"></i>Twitch</a>
+    <a href="https://www.instagram.com/pvxhub/" class="link" target="_blank"><i
+        class="fab fa-instagram"></i>Instagram</a>
+    <a href="https://ko-fi.com/pilvaxhub" class="link" target="_blank"><i class="fas fa-coffee"></i>Ko-fi</a>
+    <a href="https://www.youtube.com/@pilvaxhub" class="link" target="_blank"><i class="fab fa-youtube"></i>YouTube</a>
+    <a href="https://www.facebook.com/pvxhub" class="link" target="_blank"><i class="fab fa-facebook"></i>Facebook</a>
+  </div>
+</body>
+
 </html>
